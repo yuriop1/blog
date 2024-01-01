@@ -1,5 +1,5 @@
 <template>
-  <Transition name = "fade">
+  <Transition name = "fade">dd
     <modalTop :원룸들 = "원룸들" :popupOpenCount="popupOpenCount" :모달창오픈여부="모달창오픈여부" @closePopup="모달창오픈여부 = false"></modalTop>
   </Transition>
 
