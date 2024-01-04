@@ -1,21 +1,20 @@
 <template>
   <div>
-    <div>    
-      <h5>내일 점심은 행운버거</h5>
-      <p> -맥도날드에서 시킬꺼임 - </p>
-    </div>
-    <List :블로그글="블로그글"></List>
+    <!-- <List :블로그글="블로그글"></List> -->
+    <router-view :블로그글="블로그글"></router-view>
+    <router-link to="/">홈페이지</router-link>
+    <router-link to="/list">리스트페이지</router-link>
   </div>
 </template>
 <script>
 
-import List from './components/BlogList.vue';
 import blogData from './assets/BlogData.js';
+//import List from './components/BlogList.vue';
 
 export default {
   name: 'App',
   components:{
-    List
+    //List
   },
   data(){
     return{
