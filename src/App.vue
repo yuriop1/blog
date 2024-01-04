@@ -1,24 +1,26 @@
 <template>
   <div>
-    <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+    <div>    
+      <h5>내일 점심은 행운버거</h5>
+      <p> -맥도날드에서 시킬꺼임 - </p>
+    </div>
+    <List :블로그글="블로그글"></List>
   </div>
 </template>
 <script>
 
+import List from './components/BlogList.vue';
+import blogData from './assets/BlogData.js';
 
 export default {
   name: 'App',
   components:{
+    List
   },
   data(){
-
+    return{
+      블로그글 : blogData
+    }
   },
 
   mounted(){
