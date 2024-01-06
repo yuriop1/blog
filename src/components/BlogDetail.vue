@@ -1,17 +1,9 @@
 <template>
-  <div style="border-top: solid 1px #928787;">
-    <h4>{{블로그글[0].title }}</h4>
-    <pre>{{ 블로그글[0].content }}</pre>
+  <div style="border: solid 1px #928787;">
+    <h4>상세페이지</h4>
+    <h5>{{블로그글[$route.params.id].title }}</h5>
+    <pre>{{ 블로그글[$route.params.id].content }}</pre>
   </div>
-  <div style="border-top: solid 1px #928787;">
-    <h4>{{블로그글[1].title }}</h4>
-    <pre>{{ 블로그글[1].content }}</pre>
-  </div>
-  <div style="border-top: solid 1px #928787;">
-    <h4>{{블로그글[2].title }}</h4>
-    <pre>{{ 블로그글[2].content }}</pre>
-  </div>
-
 </template>
 
 <script>
