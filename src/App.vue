@@ -4,6 +4,7 @@
     <router-view :블로그글="블로그글"></router-view>
     <router-link to="/">홈페이지</router-link>
     <router-link to="/list">리스트페이지</router-link>
+    <router-link to="/detail">상세페이지</router-link>
   </div>
 </template>
 <script>
